@@ -1,0 +1,86 @@
+* {
+    
+    margin: 0;
+    color: #fff;
+}
+header{
+
+    display: flex;
+    height: 80px;
+    background-color: rgb(51, 38, 38);
+    justify-content: center;
+    align-items: center;
+}
+
+body{
+
+    background-color: black;
+
+}
+
+section{
+
+    background-color: rgb(163, 163, 197);
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+
+
+
+section.connexion .formConnexion form{
+
+    width: 350px;
+    min-height: 300px;
+    background-color: rgba(114, 51, 51, 0.568);
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+
+}
+
+section.inscription form{
+
+    width: 350px;
+    min-height: 300px;
+    background-color: rgba(114, 51, 51, 0.568);
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+
+}
+
+
+
+ label{
+    margin-top: 20px;
+    margin-bottom: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    color: rgb(58, 3, 3);
+    font-size: 25px;
+    text-align: center;
+    
+
+ }
+
+ input{
+
+    margin: 5px;
+    color: black;
+    border-style: none;
+    height: 30px;
+    padding-left: 15px;
+    border-radius: 5px;
+
+ }
+
+ input.btnSubmit{
+
+    background-color: rgba(214, 200, 9, 0.712);
+    font-size: 16px;
+    font-weight: 600;
+    height: 28px;
+ }
