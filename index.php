@@ -1,11 +1,15 @@
 <?php
 //connexion a ma base de donnée
-    include("common/config.php");
+    include ("config.php");
     include ("common/form.class.php");
+    include ("common/formNews.class.php");
+
 // une classe qui va gérer la forme
     $formConnexion = new FormHtml() ;
 
     $formInscription = new FormHtml() ;
+
+    $formNews = new FormNewsHtml() ;
 ?>
 
 
@@ -27,45 +31,27 @@
 
     </header>
 
+    <?php  
+
+            if(isset($_SESSION["idUser"])){
+
+                
+                include ("pages/secure/dash.php");
+
+
+            }else{
+
+                include ("pages/connexion.php"); 
     
-    <section class="connexion">
-
-       <?php 
-
-        $formConnexion->title = "Connexion";
-
-        $formConnexion->bouton = "Je me connecte !";
-
-        $formConnexion->actionText = "login.php";
-
-       echo $formConnexion->afficheForm(); ?>    
-
-    </section><!-- End connexion -->
+    
+                include ("pages/inscription.php");
 
 
-    <section class="inscription">
-
-
-            <?php 
-
-            $formInscription->title = "Inscription";
-
-            $formInscription->bouton = "Je m'inscris !";
-
-            $formInscription->actionText = "signin.php";
+            }
             
-            echo $formInscription->afficheForm(); ?>
-
-    </section><!-- End inscription -->
-
-
-
-    <section class="dash">
-
-        <h2>Dash</h2>
-
-    </section><!-- End Dash -->
-
+            
+            
+            ?>
 
     <footer>
 

@@ -52,6 +52,17 @@ section.inscription form{
 
 }
 
+section.dash form{
+
+    width: 350px;
+    min-height: 300px;
+    background-color: rgba(114, 51, 51, 0.568);
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+
+}
+
 
 
  label{
@@ -69,8 +80,8 @@ section.inscription form{
  input{
 
     margin: 5px;
-    color: black;
-    border-style: none;
+    color: rgba(81, 66, 1, 0.951);
+    border-style:none;
     height: 30px;
     padding-left: 15px;
     border-radius: 5px;
@@ -83,4 +94,6 @@ section.inscription form{
     font-size: 16px;
     font-weight: 600;
     height: 28px;
+    
  }
+

@@ -1,7 +1,7 @@
 <?php
 
 //création de la class 
-    class FormHtml
+    class FormNewsHtml
     
     {
         //creation de mes variables dynamiques
@@ -20,13 +20,9 @@
 
                             <h2>'.$this->title.'</h2> /*ajout de la variable dynamique title,*/
 
-                            <label for="">Email</label>
+                            <label for="">Actu</label>
 
-                            <input type="text" name="email" placeholder="inserer votre adresse e-mail !">
-
-                            <label for="">Mot de Passe</label>
-
-                            <input type="text" name="pass" placeholder="créer un mot de passe">
+                            <input type="text" name="actu" placeholder="Ex : la Galleria Ferme definitivement ses porte en Martinique !">
 
                             <input class="btnSubmit" type="submit" value="'.$this->bouton.'"> /*ajout de la variable dynamique bouton*/
 

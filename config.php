@@ -22,4 +22,7 @@ $mysqli = @new mysqli($host, $username, $password, $database);
     
     }
 
+//ouverture de session
+    session_start();
+
 ?>
